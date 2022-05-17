@@ -1,0 +1,13 @@
+GET http://localhost:8000/api/ HTTP/1.0
+
+###
+
+POST http://localhost:8000/api/register HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Ahmed Ali"
+}
+
+###
+
