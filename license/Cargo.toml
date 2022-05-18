@@ -1,5 +1,5 @@
 [package]
-name = "server"
+name = "license"
 version = "0.1.0"
 edition = "2021"
 authors = ["Moaz bin Mokhtar <moaz.mokhtar@gmail.com>"]
@@ -14,6 +14,7 @@ dotenv = "0.15.0"
 env_logger = "0.9.0"
 uuid = {version = "1.0.0", features = ["serde", "v4"]}
 log="0.4.17"
+genpdf = "0.2.0"
 
 [build-dependencies]
 tonic-build = "0.7"

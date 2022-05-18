@@ -6,15 +6,42 @@ use uuid::Uuid;
 pub struct Member {
     pub id: Uuid,
     pub name: String,
-    // pub last_name: String,
-    // pub email: String,
+    pub email: String,
+    pub username: String,
+    pub is_licensed: bool,
+    pub license_id: String,
 }
+
+// ===
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct MemberRequest {
     pub name: String,
-    // pub last_name: String,
-    // pub email: String,
-    // pub password: String,
-    // pub password_confirm: String,
+    pub email: String,
+    pub username: String,
+}
+
+// ===
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub struct LicenseMemberRequest {
+    pub user_id: Uuid,
+    pub name: String,
+}
+
+// ===
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub struct PrintCardRequest {
+    pub user_id: Uuid,
+    pub name: String,
+}
+
+// ===
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub struct PrintLicenseRequest {
+    pub user_id: Uuid,
+    pub name: String,
+    pub license_id: String,
 }

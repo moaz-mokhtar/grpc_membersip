@@ -6,8 +6,18 @@ POST http://localhost:8000/api/register HTTP/1.1
 content-type: application/json
 
 {
-    "name": "Ahmed Ali"
+    "name": "Ahmed Ali",
+    "email": "ahmed.ali@email.co",
+    "username": "ahmed.ali"
 }
 
 ###
 
+POST http://localhost:8000/api/register HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Moaz Mokhtar",
+    "email": "moaz.mokhtar@email.co",
+    "username": "moaz.mokhtar"
+}

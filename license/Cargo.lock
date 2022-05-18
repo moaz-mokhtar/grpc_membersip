@@ -161,21 +161,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "c4872d67bab6358e59559027aa3b9157c53d9358c51423c17554809a8858e0f8"
 
 [[package]]
-name = "card"
-version = "0.1.0"
-dependencies = [
- "dotenv",
- "env_logger",
- "genpdf",
- "log",
- "prost",
- "tokio",
- "tonic",
- "tonic-build",
- "uuid",
-]
-
-[[package]]
 name = "cc"
 version = "1.0.73"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -613,6 +598,21 @@ name = "libc"
 version = "0.2.125"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "5916d2ae698f6de9bfb891ad7a8d65c09d232dc58cc4ac433c7da3b2fd84bc2b"
+
+[[package]]
+name = "license"
+version = "0.1.0"
+dependencies = [
+ "dotenv",
+ "env_logger",
+ "genpdf",
+ "log",
+ "prost",
+ "tokio",
+ "tonic",
+ "tonic-build",
+ "uuid",
+]
 
 [[package]]
 name = "linked-hash-map"

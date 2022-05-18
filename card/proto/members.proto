@@ -1,0 +1,15 @@
+syntax = "proto3";
+package members;
+
+service Membership {
+    rpc PrintCard (PrintCardRequest) returns (PrintResponse);
+}
+
+message PrintCardRequest {
+    string userid = 1;
+    string name = 2;
+}
+
+message PrintResponse {
+    bool successful = 1;
+}

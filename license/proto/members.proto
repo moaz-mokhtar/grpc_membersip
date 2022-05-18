@@ -1,0 +1,16 @@
+syntax = "proto3";
+package members;
+
+service Membership {
+    rpc PrintLicense (PrintLicenseRequest) returns (PrintResponse);
+}
+
+message PrintLicenseRequest {
+    string userid = 1;
+    string name = 2;
+    string license_id = 3;
+}
+
+message PrintResponse {
+    bool successful = 1;
+}

@@ -3,13 +3,31 @@ package members;
 
 service Membership {
     rpc AddMember (AddMemberRequest) returns (AddMemberResponse);
+    rpc LicenseMember (LicenseMemberRequest) returns (LicenseMemberResponse);
 }
+
+// ===
 
 message AddMemberRequest {
     string name = 1;
+    string email = 2;
+    string usernames = 3;
 }
 
 message AddMemberResponse {
     bool successful = 1;
-    string message = 2;
+    string userid = 2;
+    string name = 3;
+} 
+
+// ===
+
+message LicenseMemberRequest {
+    string userid = 1;
+    string name = 2;
+} 
+
+message LicenseMemberResponse {
+    bool successful = 1;
+    string license_id = 2;
 }
